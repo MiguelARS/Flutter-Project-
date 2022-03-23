@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -94,7 +96,19 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'Titulo',
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.w400,
+            ), 
+            ),
+            Text(
+              'Subtitulos:',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w300,
+                color: Colors.red,
+            ), 
             ),
             Text(
               '$_counter',
